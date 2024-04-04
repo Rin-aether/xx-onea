@@ -1,0 +1,148 @@
+body {
+  font-family: sans-serif;
+  background: #ddd;
+  background: url(../images/haikei.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+span{
+  color: #F00;
+}
+.question{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Qtext{
+  position: relative;
+  margin: 4vw 0 1vw 1.5vw;
+  padding: 2.6vw;
+  border-radius: 2vw;
+	width: 62.3vw;
+	text-align: center;
+	background: rgb(255, 255, 255,.93);
+	font-size: 2.3vw;
+	font-weight: bold;
+	line-height: 2.2;
+	color: #333;
+}
+.Qtext:before{
+  content:'';
+  position:absolute;
+  left:100%;
+  top:40%;
+  margin-top: -1.6vh;
+  border: 1.3vw solid transparent;
+  border-left: 3vw solid rgb(255, 255, 255,.93);
+}
+
+.study:after{
+  position: absolute;
+	top: -1.1vw;
+	left: 0px;
+  content: "STUDY！";
+  background:linear-gradient(to right,#00E800,#05FBFF);
+  border-radius:8px;
+  padding: 0px 1vw;/*文字と線の間の余白*/
+  font-size: 1.68vw;
+  font-weight: bold;
+  color: #fff;
+}
+.denzin{
+  position: relative;
+}
+.nameP{
+  display: none;
+}
+.nameP:after{
+  position: absolute;
+  transform: skewX(-15deg);
+	bottom: 6.1vh;
+	right: 4.7vw;
+  content: "- 電人ＨＡＬ -";
+  background:linear-gradient(to right,#1E90FF,#1EF0FF);
+  border-radius:2px;
+  padding: 1px 12px;
+  border: 5px double #fff;
+  font-size: 2.1vw;
+  font-weight: bold;
+  text-shadow: -2.5px 2px 0 #313131;
+  color: #fff;
+}
+.denzin img{
+	height: 28.6vw;
+  animation: updown 1.3s linear 0s infinite alternate none running;
+}
+@keyframes updown {
+  0% {
+    transform: translate(.6px,-7.6px);
+  }
+  100% {
+    transform: translate(-.6px,1px);
+  }
+}
+
+#back{
+  height: 4vw;
+  top: 2.6vw;
+  left: 8vw;
+  opacity: 0.9;
+  position: absolute;
+}
+.FA{
+  width: 100%;
+  margin-top: -2.8vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.choice {
+  width: 100%;
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ }
+.box{
+  background: rgba(0,0,0,.5) ;
+  padding: 1vw;
+}
+
+.next button {
+	width: 33.5vw;
+  background: rgba(255,61,99,.8);
+  padding: 1vw;
+	margin: 1.3vw 2.2vh;
+  color: #FFFFFF;
+  font-size: 2.65vw;
+  cursor: pointer;
+  transition: all .3s;
+  border-radius: 4px;
+  border: 2px solid rgba(255,243,99,.8);
+}
+
+.next button:hover,.next button:active{
+  background: rgba(255,243,16,.8);
+  border: 2px solid rgba(255,45,45,.8);
+  box-shadow: 0 0 8px 4px #fff;
+}
+
+.box button {
+	width: 40vw;
+  background: rgba(17,171,255,.8);
+  padding: 1.1vw;
+	margin: 1.3vw 0.7vw;
+  color: #FFFFFF;
+  font-size: 2.65vw;
+  cursor: pointer;
+  transition: all .3s;
+  border-radius: 8px;
+  border: 2px solid rgba(239,255,254,.8);
+}
+.box button:hover,.box button:active{
+  background: rgba(255,243,16,.8);
+  box-shadow: 0 0 8px 1px #fff;
+}
